@@ -1282,7 +1282,7 @@ GameObject:
   - component: {fileID: 1420029889}
   - component: {fileID: 1420029890}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: NodesInputPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1753,6 +1753,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1420029888}
     m_Modifications:
+    - target: {fileID: 3656606411856002736, guid: 9193930d831541548a19a67004f1f277,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656606411856002736, guid: 9193930d831541548a19a67004f1f277,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656606411856002736, guid: 9193930d831541548a19a67004f1f277,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3742239437976594342, guid: 9193930d831541548a19a67004f1f277,
         type: 3}
       propertyPath: m_LocalPosition.x
