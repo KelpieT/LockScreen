@@ -15,7 +15,7 @@ namespace LockScreen
         IPasswordSet passwordSet;
         void Start()
         {
-            passwordCheck = new NodePasswordCheck();
+            passwordCheck = new NodePasswordCheckLua();
             passwordSet = new PasswordSet();
             passwordInput = passwordInputGO.GetComponent<IPasswordInput>();
             passwordCheck.passwordIsCheck = PasswordValidation;
