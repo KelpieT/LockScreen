@@ -15,6 +15,7 @@ namespace LockScreen
             {
                 enterNode(Number);
             }
+            Debug.Log("ok");
         }
     }
 }

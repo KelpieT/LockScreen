@@ -21,17 +21,22 @@ namespace LockScreen
             {
                 PasswordInput = "";
             }
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0) && PasswordInput != "")
             {
                 if (sendPasswordInput != null)
                 {
                     sendPasswordInput(PasswordInput);
+                    Debug.Log(PasswordInput);
                 }
             }
         }
         void AddNodeToPassword(int number)
         {
-            PasswordInput += "|" + number.ToString();
+            if (Input.GetMouseButton(0))
+            {
+                PasswordInput += "|" + number.ToString();//Sliter "|" add for nodes count bigger then 10
+                Debug.Log(PasswordInput);
+            }
         }
         private void OnDisable()
         {
