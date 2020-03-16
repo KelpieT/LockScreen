@@ -5,9 +5,17 @@ namespace LockScreen
 {
     public class NodePasswordCheck : IPasswordCheck
     {
+        private PasswordIsCheck passwordIsCheckDel;
+
+        public PasswordIsCheck passwordIsCheck { get => passwordIsCheckDel; set => passwordIsCheckDel = value; }
         public void CheckPassword(string password)
         {
-            Debug.LogWarning("check complite " + (PlayerPrefs.GetString("Password")==password).ToString());
+            bool valid = PlayerPrefs.GetString("Password") == password;
+            Debug.LogWarning("check complite " + valid.ToString());
+            if (passwordIsCheck != null)
+            {
+                passwordIsCheck(valid);
+            }
         }
     }
 }

@@ -32,11 +32,10 @@ namespace LockScreen
         }
         void AddNodeToPassword(int number)
         {
-            if (Input.GetMouseButton(0))
-            {
+            
                 PasswordInput += "|" + number.ToString();//Sliter "|" add for nodes count bigger then 10
                 Debug.Log(PasswordInput);
-            }
+            
         }
         private void OnDisable()
         {
